@@ -11,14 +11,14 @@ We've implemented a secure session management system, prove we're wrong! http:/
 Challenge points : 100 
 (![landing](https://www5.0zz0.com/2020/09/29/23/789394231.jpg))
 #### Dive Into The Challenge
-After checking the request and response on burp,   I found that there is Cookie named session has this value [40l1140oorxeezn246edkbsi6menvfyiun5abk5pi1epg89q12187jk4s8wqbpg3]
+After checking the request and response on burp,   I found that there is a Cookie named session has this value [40l1140oorxeezn246edkbsi6menvfyiun5abk5pi1epg89q12187jk4s8wqbpg3]
 
 I tried to find out the encryption used to generate this cookie ,but I didn’t find anything. 
 Also tried directory brute force using dirsearch tool
 ,but also didn’t find anything. 
 (![cookie](https://www6.0zz0.com/2020/09/29/23/653459954.jpg))
 
-After some time the organizer give us 2 hints to solve the challenge :
+After some time the organizer gave us 2 hints to solve the challenge :
 - It’s all about sessions.
 - Hidden directories are always useful.
 (![hint1](https://www7.0zz0.com/2020/09/30/00/184825154.jpg))
