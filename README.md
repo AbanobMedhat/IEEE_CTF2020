@@ -4,6 +4,27 @@ Produced to by Champion Team.
 We got the **4th place** with 494 points only 3 points to the 3rd place, enjoy.
 
 ## Web
+### S3ssion master
+#### Discription
+We've implemented a secure session management system, prove we're wrong! http://207.154.231.228:3000/ Flag format IEEE{FLAG}
+
+Challenge points : 100 
+(![landing](https://www5.0zz0.com/2020/09/29/23/789394231.jpg))
+#### Dive Into the Challenge
+After checking the request and response on burp,   I found that there is Cookie named session has this value [40l1140oorxeezn246edkbsi6menvfyiun5abk5pi1epg89q12187jk4s8wqbpg3]
+
+I tried to find out the encryption used to generate this cookie ,but I didn’t find anything. 
+Also tried directory brute force using dirsearch tool
+,but also didn’t find anything. 
+(![cookie](https://www6.0zz0.com/2020/09/29/23/653459954.jpg))
+
+After some time the organizer give us 2 hints to solve the challenge :
+- It’s all about sessions.
+- Hidden directories are always useful.
+
+So now I know that this challenge have some directory hidden who will help me to solve it.
+
+
 ### Se3cure Uploader
 #### Discription
 We've released our new open source file uploading service, do
