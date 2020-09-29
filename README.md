@@ -10,7 +10,7 @@ We've implemented a secure session management system, prove we're wrong! http:/
 
 Challenge points : 100 
 (![landing](https://www5.0zz0.com/2020/09/29/23/789394231.jpg))
-#### Dive Into the Challenge
+#### Dive Into The Challenge
 After checking the request and response on burp,   I found that there is Cookie named session has this value [40l1140oorxeezn246edkbsi6menvfyiun5abk5pi1epg89q12187jk4s8wqbpg3]
 
 I tried to find out the encryption used to generate this cookie ,but I didn’t find anything. 
@@ -21,8 +21,26 @@ Also tried directory brute force using dirsearch tool
 After some time the organizer give us 2 hints to solve the challenge :
 - It’s all about sessions.
 - Hidden directories are always useful.
+(![hint1](https://www7.0zz0.com/2020/09/30/00/184825154.jpg))
+So now I know that this challenge have some directoriy hidden who will help me to solve it.
 
-So now I know that this challenge have some directory hidden who will help me to solve it.
+So I tried dirsearch, dirb and any directory brute force tool on my kali ,but nothing worked.
+Also I tried to guess the file name but didn’t work.
+After some search I found this ([website](https://pentest-tools.com/website-vulnerability-scanning/discover-hidden-directories-and-files))
+I tried to use it , and finally I got the directory **sess**.
+
+(![sessions](https://www4.0zz0.com/2020/09/30/00/778163608.jpg))
+
+It was has 2 directories leads to two files , inside the two files {is admin:true} {is admin:flase}.
+I find that the path with the file name that has admin is false is the current cookie.
+So I followed the other path of admin is true ,
+And tried to concatenate it and set it in the cookie.
+
+(![admin is true](https://www4.0zz0.com/2020/09/30/00/377278789.jpg))
+We set the new cookie to : ryt2w3nd2nxxonrdbqd7qh1ok71bzpev8zpa7vgnn24db4m4imvrhzo1zatw10iv
+(![flag Session](https://www2.0zz0.com/2020/09/30/01/183269445.png))
+
+Done We have the flag.
 
 
 ### Se3cure Uploader
@@ -36,7 +54,7 @@ mins. flag file can be found at flag.php.
 Challenge Points : 200
 (![challenge](https://www4.0zz0.com/2020/09/29/22/474349029.jpg))
 
-#### Dive into Challenge
+#### Dive into The Challenge
 When I finished reading the description , I found that is file upload challenge ,so all what I have is to upload picture or file and execute commands to read flag.php file. 
 when i tired to upload jpg picutre it returns the path to it ,but the name of the file is **hashed** with .jpg extention.
 so I tried to upload .php file ,it returns **invalid type**.
@@ -105,4 +123,5 @@ After showing the flag it return blank page so, I showed the source page and We 
 (![flag](https://www5.0zz0.com/2020/09/29/23/525548868.png))
 
 
-
+I would like to thank to the orginzers for this competetion that was very interesting and had very good challenges.
+Thanks to my Teammates (Mohamed Saleh & Hussen ELSayed) for this great effort.
