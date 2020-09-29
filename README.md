@@ -1,5 +1,5 @@
-# IEEE_CTF2020
-This repo contain writeups for IEEE Mansora Branch CTF 2020.
+# IEEE_Olympics_CTF_2020
+This repo contain writeups for IEEE Olympics 1.0 CTF 2020.
 Produced to by Champion Team. 
 We got the **4th place** with 494 points only 3 points to the 3rd place, enjoy.
 
