@@ -31,8 +31,8 @@ I tried to use it , and finally I got the directory **sess**.
 
 (![sessions](https://www4.0zz0.com/2020/09/30/00/778163608.jpg))
 
-It was has 2 directories leads to two files , inside the two files {is admin:true} {is admin:flase}.
-I find that the path with the file name that has admin is false is the current cookie.
+It had 2 directories leads to two files , inside the two files {is admin:true} {is admin:flase}.
+I found that the path with the file name that has admin is false is the current cookie.
 So I followed the other path of admin is true ,
 And tried to concatenate it and set it in the cookie.
 
