@@ -20,7 +20,7 @@ When I finished reading the description , I found that is file upload challenge 
 when i tired to upload jpg picutre it returns the path to it ,but the name of the file is **hashed** with .jpg extention.
 so I tried to upload .php file ,it returns **invalid type**.
 (![upload](https://www5.0zz0.com/2020/09/29/22/704605433.png))
-(![invalid type](https://www5.0zz0.com/2020/09/29/22/447975091.png))
+(![invalid type](https://www8.0zz0.com/2020/09/29/23/676416689.png))
 
 #### Source code analysis 
 So first, I downloaded the source code , began to analysis it carefully.
