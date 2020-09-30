@@ -88,11 +88,11 @@ In the upload image challenges there are 2 things you need to check:
 I made some modification to print the time and random number as shown from that i found that the time of response + 3h will return the time required ,but this was in my local server only in the challenge server there was no constant hours to add.
 (![local server](https://www8.0zz0.com/2020/09/29/22/978549807.png))
 
-so now we have one variable in the name generated hash function is the random value.
-here i tried to upload image with php code injected to my local server and check if I can get it. 
-I found that the server saved it with new hash name and can be accessed, but the server doesn’t show the name.
+so, we had one variable in the name generated hash function was the random value.
+here i tried to upload image with php code injected to my local server and check if I could get it. 
+I found that the server saved it with new hash name and can be accessed, but the server didn't show the name.
 
-So, all what I have to do is:
+So, all what I have to do was:
 1. Inject picture with php code to get RCE. 
 2. rename it to image.jpg.php.
 3. take the date in response.
@@ -102,9 +102,9 @@ So, all what I have to do is:
 
 To inject php I used exiftoo with this command:
 `exiftool -Comment='<?php echo "<pre>"; system($_GET['cmd']); ?>' test5.jpg`
-Then rename it to: test5.jpg.php.
-I uploaeded it and get the response date and give to a script I wrote for this challenge you can get it in the repo. 
-Now I have file with 1000 possible hash names, I tried to give it to the intruder and start it, but it didn't work because intruder take long time and the server was deleting the files every **3 Minutes** .
+Then renamed it to: test5.jpg.php.
+I uploaeded it and got the response date and gave to a script I wrote for this challenge you can get it in the repo above. 
+so, I had file with 1000 possible hash names, I tried to give it to the intruder and started it, but it didn't work because intruder took long time and the server was deleting the files every **3 Minutes** .
 
 In this point I talked to my teammates for a help. my teammate **Mohammed Saleh** told me to use a great tool called FUFF.
 You can get it from ([here](https://github.com/ffuf/ffuf)).
@@ -112,14 +112,14 @@ You can get it from ([here](https://github.com/ffuf/ffuf)).
 WoW it worked!!!
 (![FUFF](https://www11.0zz0.com/2020/09/29/23/841804976.png))
 
-So now I have the path, let's get the flag.
+So, I had the path, let's get the flag.
 I tried to put the parameter cmd=ls to list the contents of the folder.
 (![before flag](https://www13.0zz0.com/2020/09/29/23/931832642.png))
 
 Let's take step before this directory.
 (![before flag2](https://www5.0zz0.com/2020/09/29/23/161437722.png))
 
-After showing the flag it returns blank page so, I showed the source page, and We got the flag successfully.
+After showing the flag it returned blank page so, I showed the source page, and We got the flag successfully.
 (![flag](https://www5.0zz0.com/2020/09/29/23/525548868.png))
 
 
