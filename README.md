@@ -85,7 +85,7 @@ In the upload image challenges there are 2 things you need to check:
 - path to access it.
 
 #### Solution Process
-I made some modification to print the time and random number as shown from that i found that the time of response + 3h will return the time required ,but this is was in my local server only in the challenge server there is no constant hours to add.
+I made some modification to print the time and random number as shown from that i found that the time of response + 3h will return the time required ,but this was in my local server only in the challenge server there was no constant hours to add.
 (![local server](https://www8.0zz0.com/2020/09/29/22/978549807.png))
 
 so now we have one variable in the name generated hash function is the random value.
