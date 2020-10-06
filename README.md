@@ -3,6 +3,16 @@ This repo contains writeups for IEEE Olympics 1.0 CTF 2020.
 Produced to by Champion Team. 
 We got the **4th place** with 494 points only 3 points to the 3rd place, enjoy.
 Team Members: Abanob Medhat, Mohamed Saleh, Hussein El-Sayed
+## index:
+![Misc](https://github.com/AbanobMedhat/IEEE_CTF2020#Misc)
+  ![Warm Up](https://github.com/AbanobMedhat/IEEE_CTF2020#warm-up)
+  ![Brute Me](https://github.com/AbanobMedhat/IEEE_CTF2020#brute-me)
+  ![Unsecure](https://github.com/AbanobMedhat/IEEE_CTF2020#unsecure)
+![Web](https://github.com/AbanobMedhat/IEEE_CTF2020#web)
+  ![S3ssion Master](https://github.com/AbanobMedhat/IEEE_CTF2020#s3ssion-master)
+  ![Se3cure Uploader](https://github.com/AbanobMedhat/IEEE_CTF2020#se3cure-uploader)
+  ![In3ct th!s](https://github.com/AbanobMedhat/IEEE_CTF2020#inj3ct-ths)
+
 ## Misc
 ### Warm Up
 the description of the challenge was: "Can you fix the hash and obtain the clear text password? NDgyYzgxMWRoYTVkNWI0YmM2ZDQ5N2ZmYTk4NDkxemUzOA== Flag format is IEEE{PASSWORD}"
@@ -38,7 +48,7 @@ wrapping it in flag wrapper and we got the flag: IEEE{password123}
 
 
 ### Brute Me
-#### The challenge gave me a .zip file named flag.zip, and gave me a description: "Crack the zip, get the flag!"
+The challenge gave me a .zip file named flag.zip, and gave me a description: "Crack the zip, get the flag!"
 It obviously gave me the solution in the description
 A good tool I use to crack zip files is fcrackzip
 
