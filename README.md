@@ -79,6 +79,7 @@ wrapping it up into the flag wrapper and we get the flag: IEEE{So_Uns3cure}
 
 
 
+
 ## Web
 ### S3ssion master
 #### Description
@@ -126,6 +127,7 @@ We set the new cookie to: ryt2w3nd2nxxonrdbqd7qh1ok71bzpev8zpa7vgnn24db4m4imvrhz
 ![flag Session](https://www2.0zz0.com/2020/09/30/01/183269445.png)
 
 Done We have the flag.
+
 
 
 ### Se3cure Uploader
@@ -222,9 +224,6 @@ After showing the flag it returned blank page so, I showed the source page, and 
 
 ![flag](https://www5.0zz0.com/2020/09/29/23/525548868.png)
 
-
-I would like to thank to the organizers for this competition that was very interesting and had very good challenges.
-Thanks to my Teammates (Mohamed Saleh & Hussen ELSayed) for this great effort.
 
 
 ### Inj3ct th!s
@@ -370,3 +369,8 @@ password: Sup3rS3cretP@ssw0rd
 ![image 30](https://i.imgur.com/ImjYcKB.png)
 
 And I got the flag: IEEE{Sch3ma0xedc327_is_Aw3some}
+
+
+I would like to thank to the organizers for this competition that was very interesting and had very good challenges.
+Thanks to my Teammates (Mohamed Saleh & Hussen ELSayed) for this great effort.
+Written by: Abanob Medhat & Mohamed Saleh
